@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <body>
+    <!-- var x=confirm(wright website)
+        if(x){
+        alert("yes");
+    }
+    else{
+        alert("no")
+    } -->
+      
+    <center>
+     
+      <marquee behavior="" direction="right"><img src="" id="Animation" alt="no img" /></marquee>
+
+      <div id="random">gjjdls;dsjxhwkd;a;ldjed</div>
+    </center>
+    <script>
+      //  var x = prompt("Your name")
+      //  x=confirm("correct website")
+      //     if(x){
+      //      alert("yes");
+      //  }
+
+      let Animationpic = document.getElementById("Animation");
+      console.log(Animationpic);
+
+      let divelement = document.getElementById("random");
+      divelement.innerHTML = "i am cheeta";
+
+      var i = 1;
+      function run() {
+        var img = i + ".png";
+        Animationpic.src = img;
+        i++;
+        if (i == 9)
+          // alert("enter your task")
+          i = 1;
+      }
+      run();
+
+      setInterval(run, 100);
+    </script>
+  </body>
+</html>
